@@ -1,0 +1,27 @@
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+                
+                
+  <bean id= "course" class="com.anudip.col.entity.Course">
+   
+   <constructor-arg name="cname" value="java"></constructor-arg>
+   <constructor-arg name="duration" value="650"></constructor-arg> 
+   <constructor-arg name="trainer" value="Amitabhasir" ></constructor-arg> 
+    <constructor-arg ><list>
+    <value>pritam</value>
+    <value>Akash</value>
+    <value>pappu</value>
+    <value>babin</value>
+    <value>ami</value>
+    </list></constructor-arg>
+   
+   </bean> 
+   
+                
+ 
+                       
+</beans>

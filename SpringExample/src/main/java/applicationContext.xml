@@ -1,0 +1,39 @@
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+                
+                
+  <bean id= "cour" class="com.anudipSpring.config.Course">
+   
+   <constructor-arg name="cname" value="java"></constructor-arg>
+   <constructor-arg name="cduration" value="500"></constructor-arg> 
+   <constructor-arg name="ctrainer" value="amitabhasir" ></constructor-arg> 
+   
+   </bean> 
+   
+                
+  <bean id= "st" class="com.anudipSpring.config.Student">
+   
+   <constructor-arg name="sid" value="101"></constructor-arg>
+   <constructor-arg name="sname" value="pk"></constructor-arg>
+   <constructor-arg name="semail" value="pritam@gmail.com"></constructor-arg> 
+   <constructor-arg name="sfees" value="1010"></constructor-arg> 
+   <constructor-arg > <ref bean="cour"></ref> </constructor-arg>
+   
+   </bean> 
+   
+   
+   <bean id= "st1" class="com.anudipSpring.config.Student">
+ 
+   <constructor-arg name="sid" value="105"></constructor-arg>
+   <constructor-arg name="sname" value="pritam"></constructor-arg>
+   <constructor-arg name="semail" value="p@gmail.com"></constructor-arg> 
+   <constructor-arg name="sfees" value="105610"></constructor-arg> 
+   <constructor-arg > <ref bean="cour"></ref> </constructor-arg>
+
+   </bean>    
+                       
+</beans>
